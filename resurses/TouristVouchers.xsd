@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema elementFormDefault="qualified"
+           xmlns="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.fairycompany.com/tourist-vouchers"
+           xmlns:tns="http://www.fairycompany.com/tourist-vouchers">
+
+  <element name="tourist-voucher" type="tns:Tourist-voucher" abstract="true"/>
+  <element name="excursion" type="tns:Excursion" substitutionGroup="tns:tourist-voucher"/>
+  <element name="recreation" type="tns:Recreation" substitutionGroup="tns:tourist-voucher"/>
+  <element name="spa" type="tns:Spa" substitutionGroup="tns:tourist-voucher"/>
+  <element name="tourist-vouchers">
+    <complexType>
+      <sequence>
+        <element ref="tns:tourist-voucher"
+                 maxOccurs="unbounded"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <complexType name="Tourist-voucher">
+    <sequence>
+      <element name="name" type="string"/>
+      <element name="number-of-days" type="positiveInteger"/>
+      <element name="cost" type="positiveInteger"/>
+      <element name="date-begin" type="date"/>
+      <element name="id" type="tns:Id"/>
+    </sequence>
+    <attribute name="type-of-transport" type="tns:Type-of-transport"/>
+    <attribute name="country" type="string"/>
+  </complexType>
+
+  <complexType name="Excursion">
+    <complexContent>
+      <extension base="tns:Tourist-voucher">
+        <sequence>
+          <element name="excursion-places" type="string"/>
+          <element name="hotel" type="tns:Hotel"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <complexType name="Recreation">
+    <complexContent>
+      <extension base="tns:Tourist-voucher">
+        <sequence>
+          <element name="hotel" type="tns:Hotel"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <complexType name="Spa">
+    <complexContent>
+      <extension base="tns:Tourist-voucher">
+        <sequence>
+          <element name="spa-hotel" type="tns:Spa-hotel"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <simpleType name="Id">
+    <restriction base="ID">
+      <pattern value="\d{7}"/>
+    </restriction>
+  </simpleType>
+
+  <simpleType name="Type-of-transport">
+    <restriction base="string">
+      <enumeration value="air"/>
+      <enumeration value="auto"/>
+      <enumeration value="railway"/>
+      <enumeration value="liner"/>
+    </restriction>
+  </simpleType>
+
+  <complexType name="Hotel">
+        <sequence>
+          <element name="number-of-stars" type="positiveInteger"/>
+          <element name="number-of-seets" type="positiveInteger"/>
+          <element name="air-conditioning" type="boolean"/>
+          <element name="food" type="tns:Food"/>
+        </sequence>
+  </complexType>
+
+  <complexType name="Spa-hotel">
+    <complexContent>
+      <extension base="tns:Hotel">
+        <sequence>
+          <element name="spa-treatments" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <complexType name="Food">
+    <complexContent>
+      <restriction base="boolean">
+        <attribute name="have-food" type="tns:Have-food"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+
+  <simpleType name="Have-food">
+    <restriction base="string">
+      <enumeration value="HB"/>
+      <enumeration value="BB"/>
+      <enumeration value="AL"/>
+    </restriction>
+  </simpleType>
+
+
+</schema>

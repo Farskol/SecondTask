@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<tourist-vouchers>
+
+    <excursion type-of-transport = "liner" country = "Egypt">
+        <name>экскурсия по Нилу</name>
+        <number-of-days>4</number-of-days>
+        <cost>800</cost>
+        <date-begin>2021-06-21</date-begin>
+        <id>1000001</id>
+        <excursion-places>храма в Ком-Омбо, храм Карнак, храм Гора</excursion-places>\
+        <hotel>
+            <number-of-stars>3</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">AL</food>
+        </hotel>
+    </excursion>
+
+    <recreation type-of-transport = "air" countru = "France">
+        <name>путешествие во Францию</name>
+        <number-of-days>7</number-of-days>
+        <cost>600</cost>
+        <date-begin>2021-07-23</date-begin>
+        <id>2000001</id>
+        <hotel>
+            <number-of-stars>4</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>false</air-conditioning>
+            <food have-food="true">BB</food>
+        </hotel>
+    </recreation>
+
+    <spa type-of-transport = "air" countru = "Greece">
+        <name>посещение СПА процедур в Греции</name>
+        <number-of-days>3</number-of-days>
+        <cost>700</cost>
+        <date-begin>2021-03-03</date-begin>
+        <id>3000001</id>
+        <spa-hotel>
+            <number-of-stars>4</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>false</air-conditioning>
+            <food have-food="true">AL</food>
+            <spa-treatments>гидротерапия, массаж</spa-treatments>
+        </spa-hotel>
+    </spa>
+
+    <excursion type-of-transport = "railway" country = "Belarus">
+        <name>Выходные дни в Беловежской пуще</name>
+        <number-of-days>3</number-of-days>
+        <cost>400</cost>
+        <date-begin>2021-08-08</date-begin>
+        <id>1000002</id>
+        <excursion-places>музей природы, поместье Деда Мороза, озеро Плянта, заповедник с животными</excursion-places>\
+        <hotel>
+            <number-of-stars>3</number-of-stars>
+            <number-of-seets>3</number-of-seets>
+            <air-conditioning>false</air-conditioning>
+            <food have-food="true">HB</food>
+        </hotel>
+    </excursion>
+
+    <recreation type-of-transport = "auto" countru = "Poland">
+        <name>Комфорт-тур выходного дня в Будапешт</name>
+        <number-of-days>4</number-of-days>
+        <cost>300</cost>
+        <date-begin>2021-04-11</date-begin>
+        <id>2000002</id>
+        <hotel>
+            <number-of-stars>3</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>false</air-conditioning>
+            <food have-food="false"></food>
+        </hotel>
+    </recreation>
+
+    <spa type-of-transport = "air" countru = "Austria">
+        <name>посещение СПА процедур в Австрии</name>
+        <number-of-days>3</number-of-days>
+        <cost>870</cost>
+        <date-begin>2021-01-05</date-begin>
+        <id>3000002</id>
+        <spa-hotel>
+            <number-of-stars>5</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">AL</food>
+            <spa-treatments>фитнес, массаж</spa-treatments>
+        </spa-hotel>
+    </spa>
+
+    <excursion type-of-transport = "air" country = "Italy">
+        <name>тур (от Рима до Рима)</name>
+        <number-of-days>4</number-of-days>
+        <cost>630</cost>
+        <date-begin>2021-07-03</date-begin>
+        <id>1000003</id>
+        <excursion-places>музеи Ватикана,  Неаполь и Помпеи, Сан-Марино, Пиза</excursion-places>\
+        <hotel>
+            <number-of-stars>3</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">HB</food>
+        </hotel>
+    </excursion>
+
+    <recreation type-of-transport = "air" countru = "Andorra">
+        <name>Горнолыжные курорты Андорры</name>
+        <number-of-days>5</number-of-days>
+        <cost>404</cost>
+        <date-begin>2021-011-11</date-begin>
+        <id>2000003</id>
+        <hotel>
+            <number-of-stars>4</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">BB</food>
+        </hotel>
+    </recreation>
+
+    <spa type-of-transport = "railway" countru = "Russia">
+        <name>поездка в санаторий Усть-Качка</name>
+        <number-of-days>6</number-of-days>
+        <cost>370</cost>
+        <date-begin>2021-07-17</date-begin>
+        <id>3000003</id>
+        <spa-hotel>
+            <number-of-stars>3</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">BB</food>
+            <spa-treatments>лечебная гимнастик, массаж, лечебные процедуры, забор анализов</spa-treatments>
+        </spa-hotel>
+    </spa>
+
+    <excursion type-of-transport = "air" country = "Israel">
+        <name>Жемчужины Израиля</name>
+        <number-of-days>4</number-of-days>
+        <cost>930</cost>
+        <date-begin>2021-04-25</date-begin>
+        <id>1000004</id>
+        <excursion-places>стена Плача, Храмовая гора, гробница царя Давида, Горница Тайной Вечери</excursion-places>\
+        <hotel>
+            <number-of-stars>5</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">HB</food>
+        </hotel>
+    </excursion>
+
+    <recreation type-of-transport = "air" countru = "Hungary">
+        <name>Отдых с детьми в Венгрии</name>
+        <number-of-days>6</number-of-days>
+        <cost>1200</cost>
+        <date-begin>2021-07-11</date-begin>
+        <id>2000004</id>
+        <hotel>
+            <number-of-stars>4</number-of-stars>
+            <number-of-seets>5</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">AL</food>
+        </hotel>
+    </recreation>
+
+    <spa type-of-transport = "air" countru = "Dominican Republic">
+        <name>посещение СПА процедур в Пунта-Кана</name>
+        <number-of-days>6</number-of-days>
+        <cost>370</cost>
+        <date-begin>2021-4-17</date-begin>
+        <id>3000004</id>
+        <spa-hotel>
+            <number-of-stars>4</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">AL</food>
+            <spa-treatments>сауна, массаж, лечебные процедуры</spa-treatments>
+        </spa-hotel>
+    </spa>
+
+    <excursion type-of-transport = "liner" country = "Estonia">
+        <name>круиз в Стокгольм</name>
+        <number-of-days>3</number-of-days>
+        <cost>810</cost>
+        <date-begin>2021-05-15</date-begin>
+        <id>1000005</id>
+        <excursion-places>Таллин, Стокгольм</excursion-places>\
+        <hotel>
+            <number-of-stars>4</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">AL</food>
+        </hotel>
+    </excursion>
+
+    <recreation type-of-transport = "air" countru = "Indonesia">
+        <name>отдых в Бали-Амед</name>
+        <number-of-days>8</number-of-days>
+        <cost>1000</cost>
+        <date-begin>2021-06-15</date-begin>
+        <id>2000005</id>
+        <hotel>
+            <number-of-stars>4</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">HB</food>
+        </hotel>
+    </recreation>
+
+    <excursion type-of-transport = "air" country = "Sri Lanka">
+        <name>культурное наследие Шри Ланки</name>
+        <number-of-days>4</number-of-days>
+        <cost>570</cost>
+        <date-begin>2021-06-22</date-begin>
+        <id>1000006</id>
+        <excursion-places>Коломбо, питомник в Пиннавеле,гора Сигирии «Крепость в небесах»</excursion-places>\
+        <hotel>
+            <number-of-stars>3</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="true">BB</food>
+        </hotel>
+    </excursion>
+
+    <recreation type-of-transport = "air" countru = "China">
+        <name>отдых в Хайнань</name>
+        <number-of-days>8</number-of-days>
+        <cost>450</cost>
+        <date-begin>2021-07-25</date-begin>
+        <id>2000006</id>
+        <hotel>
+            <number-of-stars>3</number-of-stars>
+            <number-of-seets>2</number-of-seets>
+            <air-conditioning>true</air-conditioning>
+            <food have-food="false"></food>
+        </hotel>
+    </recreation>
+
+</tourist-vouchers>
+
+
